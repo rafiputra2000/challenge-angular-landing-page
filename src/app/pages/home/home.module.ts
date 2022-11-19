@@ -4,6 +4,9 @@ import { BannerComponent } from './banner/banner.component';
 import { CardInformationComponent } from './card-information/card-information.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterAtComponent } from './register-at/register-at.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 
@@ -12,16 +15,20 @@ import { RegisterAtComponent } from './register-at/register-at.component';
     BannerComponent,
     CardInformationComponent,
     AboutComponent,
-    RegisterAtComponent
+    RegisterAtComponent,
+    HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    HomeRoutingModule
   ],
   exports: [
     BannerComponent,
     CardInformationComponent,
     AboutComponent,
-    RegisterAtComponent
+    RegisterAtComponent,
+    HomeComponent
   ]
 })
 export class HomeModule { }
